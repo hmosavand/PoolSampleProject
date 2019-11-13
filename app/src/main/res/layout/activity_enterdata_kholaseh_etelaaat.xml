@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EnterdataKHolasehEtelaaat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="2"
+                android:id="@+id/btnSaveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ذخیره اطلاعات ورودی" />
+
+            <Button
+
+                android:id="@+id/btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text=" محاسبات " />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_bright"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="استخر"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="دماي آب ورودي" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+                    <EditText
+                        android:id="@+id/EditTextEntranceWater"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="4.7" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="دماي آب استخر" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+
+                    <EditText
+                        android:id="@+id/EditTextPoolWaterTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="26.7" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="دماي آب دوش" />
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+                    <EditText
+                        android:id="@+id/EditTextDooshTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="29" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="دمای هوا" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+
+                    <EditText
+                        android:id="@+id/EditTextAmbientTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="29" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="حجم استخر" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="متر مکعب" />
+
+                    <EditText
+                        android:id="@+id/EditTextPoolVelocity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:hint="به قسمت ورودی استخر مراجعه کنید"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="150" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="دبی فیلتراسیون" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="مترکعب بر ساعت" />
+
+                    <EditText
+                        android:id="@+id/EditTextJDebyFilteration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="25" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="دمای جکوزی" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+
+                    <EditText
+                        android:id="@+id/EditTextJakooziTemperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="40" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="شعاع کوچک جکوزی" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="متر" />
+
+                    <EditText
+                        android:id="@+id/EditTextLittleRadius"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="1.44" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="مساحت سطح استخر" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="متر مربع" />
+
+                    <EditText
+                        android:id="@+id/EditTextPoolSurface"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="11.8" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="دبی فیلتراسیون" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="متر مکعب بر ساعت" />
+
+                    <EditText
+                        android:id="@+id/EditTextJakooziDebyFilteration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="21.99" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="حجم جکوزی" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="متر مکعب" />
+
+                    <EditText
+                        android:id="@+id/EditTextJakooziVelocity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="11" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="مساحت سالن استخر" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+
+                    <EditText
+                        android:id="@+id/EditTextSurfaceOfSalon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="385" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="فشار اشباع در دمای نقطه شبنم" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/EditTextEshbaShabnam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text=".6" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="فشار اشباع در دمای آب سطح استخر " />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/EditTextEshbaShabnamPool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="3.6" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="دماي آب ورودي" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+
+                    <EditText
+                        android:id="@+id/EditTextexteraJakooziTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="7" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="اخري" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+
+                    <EditText
+                        android:id="@+id/EditTextExteraeJakooziTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="7" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_margin="5dp"
+                    android:background="@android:color/white">
+
+                    <TextView
+
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text=" اخری ییییییییییییییییدماي آب ورودي" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+
+                        android:padding="5dp"
+                        android:text="سانتی گراد" />
+
+                    <EditText
+                        android:id="@+id/EditTextJakooziTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:ems="2"
+                        android:inputType="textPersonName"
+                        android:padding="5dp"
+                        android:text="7" />
+
+                </TableRow>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

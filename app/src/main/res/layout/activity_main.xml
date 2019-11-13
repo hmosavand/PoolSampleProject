@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="صفحه اصلی برنامه "
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <Button
+
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnEnterData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ورود اطلاعات"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnTajhizMotorkhaneh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="انتخاب تجهیزات موتورخانه" />
+
+    <Button
+        android:id="@+id/btnEntakhabTasfiyehkhaneh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="انتخاب تجهیزات تصفیه خانه" />
+
+    <Button
+        android:id="@+id/btncatalougeandhelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="راهنما و کاتالوگ" />
+
+    <Button
+        android:id="@+id/btnReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="چاپ و گزارش گیری" />
+
+</LinearLayout>
